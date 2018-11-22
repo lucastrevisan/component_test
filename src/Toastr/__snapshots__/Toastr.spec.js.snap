@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toastr component should match snapshot with toastrSettings as an object 1`] = `
+<styled.div
+  data-test="Toastr"
+  onClick={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          [MockFunction] {
+            "calls": [Circular],
+          },
+        ],
+        Array [
+          [MockFunction] {
+            "calls": [Circular],
+          },
+        ],
+      ],
+    }
+  }
+  opened={false}
+>
+  <styled.p>
+    text
+  </styled.p>
+  <styled.div
+    data-test="ToastrClose"
+  >
+    <Icon
+      color="#ffffff"
+      height={null}
+      type="ToastrClose"
+      width={null}
+    />
+  </styled.div>
+</styled.div>
+`;
+
+exports[`Toastr component should match snapshot with toastrSettings as false 1`] = `
+<styled.div
+  data-test="Toastr"
+  onClick={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          [MockFunction] {
+            "calls": [Circular],
+          },
+        ],
+      ],
+    }
+  }
+  opened={false}
+>
+  <styled.p />
+  <styled.div
+    data-test="ToastrClose"
+  >
+    <Icon
+      color="#ffffff"
+      height={null}
+      type="ToastrClose"
+      width={null}
+    />
+  </styled.div>
+</styled.div>
+`;

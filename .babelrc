@@ -1,0 +1,29 @@
+{
+  "presets": ["env", "react"],
+  "plugins": [
+    "syntax-dynamic-import",
+    "transform-object-rest-spread",
+    [
+      "module-resolver",
+      {
+        "root": ["./src"]
+      }
+    ]
+  ],
+  "env": {
+    "test": {
+      "plugins": ["babel-plugin-dynamic-import-node"],
+      "presets": [
+        [
+          "env",
+          {
+            "modules": "commonjs"
+          }
+        ]
+      ]
+    },
+    "production": {
+      "ignore": ["**/*.spec.js"]
+    }
+  }
+}

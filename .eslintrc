@@ -1,0 +1,46 @@
+{
+  "parser": "babel-eslint",
+  "plugins": ["import", "react", "jsx-a11y"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "globals": {
+    "document": true,
+    "test": true,
+    "expect": true,
+    "describe": true,
+    "it": true,
+    "fetch": true,
+    "Headers": true,
+    "window": true,
+    "jest": true,
+    "beforeEach": true,
+    "__SERVER__": true,
+    "__PROD__": true,
+    "__API__": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-console": "warn",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off"
+  }
+}

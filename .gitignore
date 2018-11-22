@@ -1,0 +1,12 @@
+*.log
+*.swp
+*.lock
+.idea
+node_modules
+examples
+coverage
+package-lock.json
+dist
+reports
+junit.xml
+.npmignore
